@@ -54,7 +54,7 @@
 
 ## 拷贝构造函数调用时机的总结：
 该案例使用的类的实现如下：
-```
+```cpp
 class person
 {
 public:
@@ -73,7 +73,7 @@ public:
 };
 ```
    * 案例一：使用一个已经创建完毕的对象来初始化一个新对象
-   ```
+   ```cpp
    int main(){
     person p1(20,1);   //调用有参构造
     person p2(p1);   //调用拷贝构造
@@ -86,7 +86,7 @@ public:
    ```
 
    * 案例二：以值传递的给函数参数传值（以值传递的方式给函数传参）
-   ```
+   ```cpp
     void func(person p){   //函数形参是值传递
         p.age = 1000;
     }
@@ -127,15 +127,15 @@ public:
 
    指针传递同上
    ```
-   * **需要注意**：以值方式返回局部对象
+### **需要注意**：以值方式返回局部对象
     ps:类定义中新创建析构函数
-    ```
-    ~person(){
-        std::cout << "析构函数调用" << std::endl;
-    }
-    ```
+     ```cpp
+        ~person(){
+            std::cout << "析构函数调用" << std::endl;
+        }
+     ```
   1. person p1 = func(); // 声明的同时接收返回值（初始化）或 p1调用拷贝构造
-   ```
+   ```cpp
     person func(){
         person p(10,50);
         std::cout << "p的地址：" << &p << std::endl;
@@ -165,7 +165,7 @@ public:
   2.  person p1; //p1直接调用默认构造函数
       p1 = func(); 
    
-   ```
+   ```cpp
     person func(){
         person p(10,50);
         std::cout << "p的地址：" << &p << std::endl;
