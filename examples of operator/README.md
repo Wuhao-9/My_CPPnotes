@@ -3,7 +3,7 @@
 
 下面是一元运算符的实例：
 
-* [一元减运算符，即负号（-）](https://github.com/Wuhao-9/My_CPPnotes/blob/master/examples%20of%20operator/operator-(%E8%B4%9F%E6%95%B0%EF%BC%89/operator-.cpp)
+* [一元减运算符，即负号（-）](operator-(负数）/operator-.cpp)
 
 ### 输入输出运算符重载：
 注意：因为**istream类**只允许程序中存在一个istream对象，**不允许被复制**！因此在重载函数形参列表和返回类型应该使用**引用传参**（ostream类也同样如此）！
