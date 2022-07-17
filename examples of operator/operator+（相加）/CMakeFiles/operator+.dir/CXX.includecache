@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wuhao/MyProject/VS_C++/operator+/Person.hpp
+iostream
+-
+
+/home/wuhao/MyProject/VS_C++/operator+/operator+.cpp
+iostream
+-
+Person.hpp
+/home/wuhao/MyProject/VS_C++/operator+/Person.hpp
+
