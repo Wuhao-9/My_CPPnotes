@@ -54,4 +54,6 @@ eg：用二进制方式写文件`ios::binary | ios::out`
 * ifs.get()**逐字符读取，可读取换行符，制表符，空格**
 * 以EOF作为文件结束标志的文件，前提：必须是文本文件
 
-[文件读取相关案例](../Vs_c++/读写streams_for_files/)
+[文件读取相关案例](https://github.com/Wuhao-9/My_CPPnotes/tree/master/%E8%AF%BB%E5%86%99streams_for_files)
+
+[I/Ostream 相关文章](https://github.com/Wuhao-9/My_CPPnotes/blob/master/Mynotes/C%2B%2B%E5%AF%B9%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.md)
