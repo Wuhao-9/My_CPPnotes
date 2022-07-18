@@ -1,5 +1,6 @@
 # 对于文件的I/O流
 ![各I/Ostream总揽](http://www.cplusplus.com/img/iostream.gif)
+
 文件操作，主要运用`fstream`库
 
 文件类型分为两种：
@@ -103,4 +104,6 @@ fstream foi("...", ios::in|ios::out);
 * **控制符明确指明**:当遇到流中某些特定的控制符时，同步会发生。这些控制符包括：flush 和endl。
 * **明确调用函数sync()**: 调用成员函数sync() (无参数)可以引发立即同步。这个函数返回一个int 值，等于-1 表示该流没有联系的缓存或操作失败。
 
-[文件读取相关案例](../Vs_c++/读写streams_for_files/)
+[文件读取相关案例](https://github.com/Wuhao-9/My_CPPnotes/tree/master/%E8%AF%BB%E5%86%99streams_for_files)
+
+[I/Ostream 相关文章](https://github.com/Wuhao-9/My_CPPnotes/blob/master/Mynotes/C%2B%2B%E5%AF%B9%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C.md)
